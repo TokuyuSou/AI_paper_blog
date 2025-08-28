@@ -1,0 +1,31 @@
+# General
+.DS_Store
+.env
+.env.local
+
+# Node.js / React
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# Python
+__pycache__/
+venv/
+.venv/
+
+# Generated content (keep generated_content/articles/ and generated_content/papers/)
+# The user wants sample articles to be tracked, so we will not ignore the content itself.
+# However, we can ignore logs or other temporary files if they were generated.
+
+# Temporary files created by the agent
+ai_paper_blog_project_temp/
+ai_paper_blog_project.zip
+
+# IDE specific files
+.vscode/
+.idea/
+
+
