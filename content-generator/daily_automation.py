@@ -13,16 +13,16 @@ from article_generator import ArticleGenerator
 from content_manager import ContentManager
 
 class DailyAutomation:
-    def __init__(self):
+    def __init__(self, blog_app_path: str):
         self.fetcher = EnhancedArxivFetcher()
         self.generator = ArticleGenerator()
-        self.content_manager = ContentManager()
+        self.content_manager = ContentManager(blog_path=blog_app_path)
         self.max_daily_articles = 2  # Limit to 2 new articles per day
         
     def load_existing_articles(self):
         """Load existing articles to avoid duplicates."""
         try:
-            articles_file = os.path.join('..', 'ai-paper-blog', 'src', 'data', 'articles.json')
+            articles_file = os.path.join(self.content_manager.articles_dir, "articles.json")
             if os.path.exists(articles_file):
                 with open(articles_file, 'r', encoding='utf-8') as f:
                     return json.load(f)
@@ -82,7 +82,6 @@ class DailyAutomation:
                 
                 # Generate article
                 article_data = self.generator.generate_article(paper)
-                
                 if article_data:
                     # Add paper metadata
                     article_data['paper_id'] = paper['id']
@@ -144,7 +143,7 @@ class DailyAutomation:
             
             if not articles:
                 print("No articles were generated successfully. Exiting.")
-                return
+                sys.exit(1) # Exit with error code
             
             # Save articles
             self.save_generated_articles(articles)
@@ -160,8 +159,12 @@ class DailyAutomation:
 
 def main():
     """Main function for daily automation."""
-    automation = DailyAutomation()
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.abspath(os.path.join(script_dir, '..'))
+    blog_app_path = os.path.join(project_root, 'ai-paper-blog')
+    automation = DailyAutomation(blog_app_path=blog_app_path)
     automation.run_daily_update()
+
 
 if __name__ == "__main__":
     main()
