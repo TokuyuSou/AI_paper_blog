@@ -1,0 +1,60 @@
+name: Daily Paper Update
+
+on:
+  schedule:
+    # Run daily at 9:00 AM UTC (6:00 PM JST)
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-papers:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install Python dependencies
+      run: |
+        cd content-generator
+        pip install -r requirements.txt
+        
+    - name: Install Node.js dependencies
+      run: |
+        cd ai-paper-blog
+        npm install
+        
+    - name: Generate new articles
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        cd content-generator
+        python3 daily_automation.py
+        
+    - name: Build blog
+      run: |
+        cd ai-paper-blog
+        npm run build
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-update: Add new AI/ML paper articles $(date '+%Y-%m-%d')"
+          git push
+        fi
+

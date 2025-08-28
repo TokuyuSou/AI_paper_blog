@@ -74,7 +74,7 @@ class ArticleGenerator:
             "subtitle": self._generate_subtitle(paper),
             "category": self._format_category(paper['category']),
             "authors": paper['authors'],
-            "paper_url": paper['url'],
+            "paper_url": f"https://arxiv.org/abs/{paper['id']}",
             "read_time": f"{read_time} min read",
             "publish_date": datetime.now().strftime("%Y-%m-%d"),
             "concept_explained": concept_title,
@@ -99,7 +99,7 @@ class ArticleGenerator:
         Write a beginner-friendly explanation of why the research in this paper was needed. 
         
         Paper Title: {paper['title']}
-        Abstract: {paper['abstract']}
+        Abstract: {paper['summary']}
         
         Requirements:
         - Explain in simple terms what problems existed before this research
@@ -119,7 +119,7 @@ class ArticleGenerator:
         Explain the key innovation and methodology of this research paper in beginner-friendly terms.
         
         Paper Title: {paper['title']}
-        Abstract: {paper['abstract']}
+        Abstract: {paper['summary']}
         
         Requirements:
         - Break down the main approach into simple steps
@@ -140,7 +140,7 @@ class ArticleGenerator:
         Explain the results and achievements of this research paper in beginner-friendly terms.
         
         Paper Title: {paper['title']}
-        Abstract: {paper['abstract']}
+        Abstract: {paper['summary']}
         
         Requirements:
         - Explain what the research achieved
@@ -161,7 +161,7 @@ class ArticleGenerator:
         Explain why this research paper matters today and its long-term significance in AI.
         
         Paper Title: {paper['title']}
-        Abstract: {paper['abstract']}
+        Abstract: {paper['summary']}
         Published: {paper['published']}
         
         Requirements:
@@ -184,7 +184,7 @@ class ArticleGenerator:
         Identify the single most important technical concept introduced or used in this paper that a beginner should understand.
         
         Paper Title: {paper['title']}
-        Abstract: {paper['abstract']}
+        Abstract: {paper['summary']}
         
         Return only the name of the concept (2-4 words maximum). Examples:
         - "Self-Attention Mechanism"
@@ -199,7 +199,7 @@ class ArticleGenerator:
         explanation_prompt = f"""
         Provide a detailed, beginner-friendly explanation of "{concept_title}" as it relates to the paper "{paper['title']}".
         
-        Paper Abstract: {paper['abstract']}
+        Paper Abstract: {paper['summary']}
         
         Requirements:
         - Start with a simple analogy or real-world example
@@ -224,7 +224,7 @@ class ArticleGenerator:
         Write a single, clear sentence that summarizes the main contribution of this research paper.
         
         Paper Title: {paper['title']}
-        Abstract: {paper['abstract']}
+        Abstract: {paper['summary']}
         
         Requirements:
         - One sentence only
@@ -243,7 +243,7 @@ class ArticleGenerator:
         Create an engaging subtitle for a beginner-friendly explanation of this research paper.
         
         Paper Title: {paper['title']}
-        Abstract: {paper['abstract']}
+        Abstract: {paper['summary']}
         
         Requirements:
         - 5-10 words
@@ -274,13 +274,11 @@ class ArticleGenerator:
         """Make a call to OpenAI API with error handling."""
         try:
             response = self.client.chat.completions.create(
-                model="gpt-4.1-mini",
+                model="gpt-5-nano",
                 messages=[
                     {"role": "system", "content": "You are an expert at explaining complex AI research papers in simple, beginner-friendly terms. You use analogies, examples, and clear language to make technical concepts accessible to university students new to AI."},
                     {"role": "user", "content": prompt}
                 ],
-                max_tokens=1500,
-                temperature=0.7
             )
             
             return response.choices[0].message.content.strip()

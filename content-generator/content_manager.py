@@ -12,9 +12,11 @@ from datetime import datetime
 import re
 
 class ContentManager:
-    def __init__(self, blog_path: str = "/home/ubuntu/ai-paper-blog"):
-        self.blog_path = blog_path
-        self.articles_dir = os.path.join(blog_path, "src", "data")
+    def __init__(self, blog_path: str = "../../ai-paper-blog"):
+        # Resolve the absolute path based on the script's location
+        script_dir = os.path.dirname(__file__)
+        self.blog_path = os.path.abspath(os.path.join(script_dir, blog_path))
+        self.articles_dir = os.path.join(self.blog_path, "src", "data")
         self.ensure_directories()
     
     def ensure_directories(self):
@@ -672,12 +674,81 @@ export default CategoryPage'''
             f.write(category_page_content)
         
         print("Updated CategoryPage component to use dynamic data")
+    
+    def integrate_articles_to_blog(self, new_articles):
+        """
+        Integrate new articles into the existing blog
+        
+        Args:
+            new_articles (list): List of new article dictionaries to add
+        """
+        try:
+            # Load existing articles
+            articles_file = os.path.join(self.articles_dir, 'articles.json')
+            existing_articles = []
+            
+            if os.path.exists(articles_file):
+                with open(articles_file, 'r', encoding='utf-8') as f:
+                    existing_articles = json.load(f)
+            
+            # Convert new articles to the correct format
+            formatted_articles = []
+            for article in new_articles:
+                formatted_article = {
+                    "id": self._create_article_id(article["title"]),
+                    "title": article["title"],
+                    "subtitle": article["subtitle"],
+                    "category": article["category"],
+                    "categorySlug": self._get_category_slug(article["category"]),
+                    "authors": article["authors"],
+                    "paperUrl": article["paper_url"],
+                    "readTime": article["read_time"],
+                    "publishDate": article["publish_date"],
+                    "conceptExplained": article["concept_explained"],
+                    "content": article["content"],
+                    "conceptExplanation": article["concept_explanation"],
+                    "summary": article["summary"],
+                    "excerpt": self._create_excerpt(article["content"]["background"]),
+                    "paper_id": article.get("paper_id", ""),
+                    "arxiv_url": article.get("arxiv_url", "")
+                }
+                formatted_articles.append(formatted_article)
+            
+            # Add new articles to the beginning (most recent first)
+            all_articles = formatted_articles + existing_articles
+            
+            # Remove duplicates based on paper_id or id
+            seen_ids = set()
+            unique_articles = []
+            
+            for article in all_articles:
+                # Create a unique identifier for the article
+                article_id = article.get('paper_id') or article.get('id')
+                
+                if article_id and article_id not in seen_ids:
+                    seen_ids.add(article_id)
+                    unique_articles.append(article)
+                elif not article_id:
+                    # If no ID found, add anyway (for older articles)
+                    unique_articles.append(article)
+            
+            # Sort articles by date (most recent first)
+            unique_articles.sort(key=lambda x: x.get('publishDate', ''), reverse=True)
+            
+            # Save updated articles
+            with open(articles_file, 'w', encoding='utf-8') as f:
+                json.dump(unique_articles, f, indent=2, ensure_ascii=False)
+            
+            print(f"Successfully integrated {len(formatted_articles)} new articles. Total articles: {len(unique_articles)}")
+            
+        except Exception as e:
+            print(f"Error integrating articles to blog: {e}")
+            raise
 
 def main():
-    """Example usage of ContentManager."""
+    """Main function for testing content integration."""
     manager = ContentManager()
     
-    # Load generated articles
     try:
         articles = []
         articles_dir = "articles"
@@ -699,4 +770,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
