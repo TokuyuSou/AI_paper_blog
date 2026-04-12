@@ -1,0 +1,44 @@
+{
+  "title": "Paper Explained: SIM1: Physics-Aligned Simulator as Zero-Shot Data Scaler in Deformable Worlds - A Beginner's Guide",
+  "subtitle": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+  "category": "Basic Concepts",
+  "authors": [
+    "Yunsong Zhou",
+    "Hangxu Liu",
+    "Xuekun Jiang",
+    "Xing Shen",
+    "Yuanzhen Zhou",
+    "Hui Wang",
+    "Baole Fang",
+    "Yang Tian",
+    "Mulin Yu",
+    "Qiaojun Yu",
+    "Li Ma",
+    "Hengjie Li",
+    "Hanqing Wang",
+    "Jia Zeng",
+    "Jiangmiao Pang"
+  ],
+  "paper_url": "https://arxiv.org/abs/2604.08544v1",
+  "read_time": "1 min read",
+  "publish_date": "2026-04-12",
+  "concept_explained": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+  "content": {
+    "background": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "methodology": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "results": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "significance": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+  },
+  "concept_explanation": {
+    "title": "Understanding Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}: The Heart of SIM1",
+    "content": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+  },
+  "summary": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+  "paper_id": "2604.08544v1",
+  "arxiv_url": "https://arxiv.org/abs/2604.08544v1",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV"
+  ]
+}
