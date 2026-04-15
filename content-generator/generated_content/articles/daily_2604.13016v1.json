@@ -1,0 +1,40 @@
+{
+  "title": "Paper Explained: Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe - A Beginner's Guide",
+  "subtitle": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+  "category": "Foundation Models",
+  "authors": [
+    "Yaxuan Li",
+    "Yuxin Zuo",
+    "Bingxiang He",
+    "Jinqian Zhang",
+    "Chaojun Xiao",
+    "Cheng Qian",
+    "Tianyu Yu",
+    "Huan-ang Gao",
+    "Wenkai Yang",
+    "Zhiyuan Liu",
+    "Ning Ding"
+  ],
+  "paper_url": "https://arxiv.org/abs/2604.13016v1",
+  "read_time": "1 min read",
+  "publish_date": "2026-04-15",
+  "concept_explained": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+  "content": {
+    "background": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "methodology": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "results": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "significance": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+  },
+  "concept_explanation": {
+    "title": "Understanding Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}: The Heart of Rethinking On-Policy Distillation of Large Language Models",
+    "content": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+  },
+  "summary": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+  "paper_id": "2604.13016v1",
+  "arxiv_url": "https://arxiv.org/abs/2604.13016v1",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}
