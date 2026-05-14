@@ -1,5 +1,78 @@
 [
   {
+    "id": "eva-bench-a-new-end-to-end-framework-for-evaluating-voice-agents",
+    "title": "Paper Explained: EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents - A Beginner's Guide",
+    "subtitle": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "category": "Foundation Models",
+    "categorySlug": "foundation-models",
+    "authors": [
+      "Tara Bogavelli",
+      "Gabrielle Gauthier Melançon",
+      "Katrina Stankiewicz",
+      "Oluwanifemi Bamgbose",
+      "Fanny Riols",
+      "Hoang H. Nguyen",
+      "Raghav Mehndiratta",
+      "Lindsay Devon Brin",
+      "Joseph Marinier",
+      "Hari Subramani",
+      "Anil Madamala",
+      "Sridhar Krishna Nemala",
+      "Srinivas Sunkara"
+    ],
+    "paperUrl": "https://arxiv.org/abs/2605.13841v1",
+    "readTime": "1 min read",
+    "publishDate": "2026-05-14",
+    "conceptExplained": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "content": {
+      "background": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "methodology": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "results": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "significance": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+    },
+    "conceptExplanation": {
+      "title": "Understanding Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}: The Heart of EVA-Bench",
+      "content": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+    },
+    "summary": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "excerpt": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}.",
+    "paper_id": "2605.13841v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13841v1"
+  },
+  {
+    "id": "negation-neglect-when-models-fail-to-learn-negations-in-training",
+    "title": "Paper Explained: Negation Neglect: When models fail to learn negations in training - A Beginner's Guide",
+    "subtitle": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "category": "Foundation Models",
+    "categorySlug": "foundation-models",
+    "authors": [
+      "Harry Mayne",
+      "Lev McKinney",
+      "Jan Dubiński",
+      "Adam Karvonen",
+      "James Chua",
+      "Owain Evans"
+    ],
+    "paperUrl": "https://arxiv.org/abs/2605.13829v1",
+    "readTime": "1 min read",
+    "publishDate": "2026-05-14",
+    "conceptExplained": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "content": {
+      "background": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "methodology": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "results": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "significance": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+    },
+    "conceptExplanation": {
+      "title": "Understanding Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}: The Heart of Negation Neglect",
+      "content": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+    },
+    "summary": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "excerpt": "Error generating content: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}.",
+    "paper_id": "2605.13829v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13829v1"
+  },
+  {
     "id": "variational-inference-for-lévy-process-driven-sdes-via-neural-tilting",
     "title": "Paper Explained: Variational Inference for Lévy Process-Driven SDEs via Neural Tilting - A Beginner's Guide",
     "subtitle": "Learning Jumpy Data with Neural Tilting",
